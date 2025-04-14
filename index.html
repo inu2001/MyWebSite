@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>黒田優衣ポートフォリオ</h1>
+  <p>制作したデザイン一覧</p>
+</header>
+
+<section class="section-banner">
+    <h2 class="section-title">バナー広告</h2>
+    <div class="gallery">
+  <img src="images/仮想カメラアプリバナー.png" alt="仮想カメラアプリバナー"onclick="openLightbox(this)">
+  <img src="images/家具campaign_バナー.png" alt="家具バナー"onclick="openLightbox(this)">
+  <img src="images/クロワッサンバナー.png" alt="クロワッサンバナー"onclick="openLightbox(this)">
+</div>
+</section>
+<section class="section-richmenu">
+    <h2 class="section-title">リッチメニュー</h2>
+    <div class="gallery">
+   <img src="images/cafe.png" alt="カフェリッチメニュー"onclick="openLightbox(this)">
+   <img src="images/イラスト_スタンダード.png" alt="イラスト_スタンダードリッチメニュー"onclick="openLightbox(this)">
+   <img src="images/服ナチュラル.png" alt="服ナチュラルリッチメニュー"onclick="openLightbox(this)">
+  <img src="images/soap.png" alt="ソープリッチメニュー"onclick="openLightbox(this)">
+  <img src="images/オイル.png" alt="オイルリッチメニュー"onclick="openLightbox(this)">
+  <img src="images/まつ毛.png" alt="まつ毛リッチメニュー"onclick="openLightbox(this)">
+  <img src="images/温泉.png" alt="温泉リッチメニュー"onclick="openLightbox(this)">
+  <img src="images/ネイル_ポップ.png" alt="ネイル_ポップリッチメニュー"onclick="openLightbox(this)">
+  <img src="images/歯医者.png" alt="歯医者リッチメニュー"onclick="openLightbox(this)">
+  <img src="images/ドーナツ.png" alt="ドーナツリッチメニュー"onclick="openLightbox(this)">
+  <img src="images/ランチ.png" alt="ランチリッチメニュー"onclick="openLightbox(this)">
+ 
+  
+</div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kuroda</p>
+</footer>
+<!-- Lightbox用 -->
+<div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" alt="">
+  </div>
+  
+  <script>
+    function openLightbox(el) {
+      const lightbox = document.getElementById('lightbox');
+      const img = document.getElementById('lightbox-img');
+      img.src = el.src;
+      img.alt = el.alt;
+      lightbox.style.display = 'flex';
+    }
+  
+    function closeLightbox() {
+      document.getElementById('lightbox').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
